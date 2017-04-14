@@ -11,6 +11,7 @@ fi
 # User specific aliases and functions
 
 
+PATH=$PATH:~/.local/bin
 if [  `which powerline-daemon` ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
