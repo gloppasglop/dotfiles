@@ -1,3 +1,7 @@
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 syntax on               " enable syntax highlighting
 set cursorline          " highlight the current line
 " set cursorcolumn          " highlight the current line
