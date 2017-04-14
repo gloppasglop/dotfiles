@@ -12,12 +12,13 @@ fi
 
 
 PATH=$PATH:~/.local/bin
-if [  `which powerline-daemon` ]; then
+if [  `which powerline-daemon 2>/dev/null` ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
   POWERLINE_BASH_SELECT=1
-  powerline_repository_root=$(pip show powerline-status | grep "^Location:" | cut -f 2- -d" ")
-  if [ ! -z "$powerline_repository_root"  ]; then
-    . $powerline_repository_root/powerline/bindings/bash/powerline.sh
+  $POWERLINE_REPOSITORY=$(pip show powerline-status | grep "^Location:" | cut -f 2- -d" ")
+  export POWERLINE_REPOSITORY
+  if [ ! -z "$POWERLINE_REPOSITORY"  ]; then
+    . $POWERLINE_REPOSITORY/powerline/bindings/bash/powerline.sh
   fi
 fi
