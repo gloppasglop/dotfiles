@@ -1,3 +1,4 @@
+" Powerline
 set rtp+=$POWERLINE_REPOSITORY/powerline/bindings/vim
 
 python from powerline.vim import setup as powerline_setup
@@ -21,6 +22,8 @@ set scrolloff=5         " show at least 5 lines above/below
 filetype on             " enable filetype detection
 filetype indent on      " enable filetype-specific indenting
 filetype plugin on      " enable filetype-specific plugins
+
+set laststatus=2
 
 " tabs and indenting
 set autoindent          " auto indenting
