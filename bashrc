@@ -17,6 +17,6 @@ if [ -f `powerline-daemon` ]; then
   POWERLINE_BASH_SELECT=1
   powerline_repository_root=$(pip show powerline-status | grep "^Location:" | cut -f 2- -d" ")
   if [ ! -z "$powerline_repository_root"  ]; then
-    . $powerline_repository_root/powerline/bash/powerline.sh
+    . $powerline_repository_root/powerline/bindings/bash/powerline.sh
   fi
 fi
