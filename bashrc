@@ -16,7 +16,7 @@ if [  `which powerline-daemon` ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
   POWERLINE_BASH_SELECT=1
-  $POWERLINE_REPOSITORY=$(pip show powerline-status 2> /dev/null | grep "^Location:" | cut -f 2- -d" ")
+  POWERLINE_REPOSITORY=$(pip show powerline-status 2> /dev/null | grep "^Location:" | cut -f 2- -d" ")
   export POWERLINE_REPOSITORY
   if [ ! -z "$POWERLINE_REPOSITORY"  ]; then
     . $POWERLINE_REPOSITORY/powerline/bindings/bash/powerline.sh
