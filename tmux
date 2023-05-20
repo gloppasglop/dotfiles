@@ -1,3 +1,6 @@
-source "$POWERLINE_REPOSITORY/powerline/bindings/tmux/powerline.conf"
-run-shell "powerline-daemon -q"
+source "/usr/share/tmux/powerline.conf"
+set-option -sa terminal-overrides ",xterm*:Tc"
 
+unbind C-b
+set-option -g prefix C-Space
+bind-key C-Space send-prefix
