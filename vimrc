@@ -1,7 +1,7 @@
 " Powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" python3 from powerline.vim import setup as powerline_setup
+" python3 powerline_setup()
+" python3 del powerline_setup
 
 syntax on               " enable syntax highlighting
 set cursorline          " highlight the current line
@@ -10,7 +10,7 @@ set cursorline          " highlight the current line
 set ruler             " show line number in bar
 set nobackup            " don't create pointless backup files; Use VCS instead
 set autoread            " watch for file changes
-set number              " show line numbers
+set relativenumber              " show line numbers
 set showcmd             " show selection metadata
 set showmode            " show INSERT, VISUAL, etc. mode
 set showmatch           " show matching brackets
@@ -40,5 +40,5 @@ set noerrorbells        " turn off audio bell
 set visualbell          " but leave on a visual bell
 
 " search
-set hlsearch            " highlighted search results
+set nohlsearch            " highlighted search results
 set showmatch           " show matching bracket
