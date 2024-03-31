@@ -3,8 +3,9 @@
 " python3 powerline_setup()
 " python3 del powerline_setup
 
-syntax on               " enable syntax highlighting
+syntax enable               " enable syntax highlighting
 set cursorline          " highlight the current line
+set path+=**
 " set cursorcolumn          " highlight the current line
 " set background=dark   " darker color scheme
 set ruler             " show line number in bar
@@ -42,3 +43,4 @@ set visualbell          " but leave on a visual bell
 " search
 set nohlsearch            " highlighted search results
 set showmatch           " show matching bracket
+
